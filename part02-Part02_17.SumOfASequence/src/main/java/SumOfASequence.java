@@ -9,10 +9,13 @@ public class SumOfASequence {
         System.out.println("Last number? ");
         int number = Integer.valueOf(scanner.nextLine());
         int sum = 0;
+        int i = 0;
 
-        for (int i = 0; i < number; i++) {
-            sum = number + sum;
+        while (i < number) {
+            i++;
+            sum += i;
         }
+        System.out.println(sum);
 
     }
 }
