@@ -8,14 +8,18 @@ public class ListSize {
         Scanner scanner = new Scanner(System.in);
 
         ArrayList<String> list = new ArrayList<>();
+        int values;
+
         while (true) {
             String input = scanner.nextLine();
             if (input.equals("")) {
                 break;
             }
-
             list.add(input);
         }
+
+        System.out.println("In total: " + list.size());
+
 
     }
 }
