@@ -9,8 +9,8 @@ public class RememberTheseNumbers {
 
         ArrayList<Integer> numbers = new ArrayList<>();
         while (true) {
-            int luku = Integer.valueOf(scanner.nextLine());
-            if (luku == -1) {
+            int number = Integer.valueOf(scanner.nextLine());
+            if (number == -1) {
                 break;
             }
 

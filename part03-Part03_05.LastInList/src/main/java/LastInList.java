@@ -6,7 +6,6 @@ public class LastInList {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int values;
 
         ArrayList<String> list = new ArrayList<>();
         while (true) {
