@@ -14,8 +14,9 @@ public class RememberTheseNumbers {
                 break;
             }
 
-            numbers.add(luku);
+            numbers.add(number);
         }
+        System.out.println(numbers);
 
     }
 }

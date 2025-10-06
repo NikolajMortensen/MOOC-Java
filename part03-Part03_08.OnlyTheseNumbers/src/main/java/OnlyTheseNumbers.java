@@ -11,6 +11,15 @@ public class OnlyTheseNumbers {
         while (true) {
             int number = Integer.valueOf(scanner.nextLine());
             if (number == -1) {
+                System.out.println("From where?");
+                int first = Integer.valueOf(scanner.nextLine());
+                System.out.println("To where?");
+                int last = Integer.valueOf(scanner.nextLine());
+
+                for (int i = first; i <= last; i++ ) {
+                    System.out.println(numbers.get(i));
+                }
+
                 break;
             }
 
