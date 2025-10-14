@@ -23,12 +23,32 @@ public class Swap {
         // asking for the two indices
         // and then swapping them
 
+        System.out.println("First indice: ");
+        int firstIndice = Integer.valueOf(scanner.nextLine());
+
+        System.out.println("Second indice: ");
+        int secondIndice = Integer.valueOf(scanner.nextLine());
+
+        swapElements(array, firstIndice, secondIndice);
+
+
+
+
+
         System.out.println("");
         index = 0;
         while (index < array.length) {
             System.out.println(array[index]);
             index++;
         }
+    }
+
+    public static void swapElements(int[] array, int firstIndice, int secondIndice) {
+        int temp = array[firstIndice]; // Copying the first indice
+
+        array[firstIndice] = array[secondIndice];
+
+        array[secondIndice] = temp;
     }
 
 }
