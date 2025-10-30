@@ -10,5 +10,26 @@ public class Items {
         ArrayList<Item> items = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
+        while (true) {
+
+            System.out.println("Enter a name, empty will stop");
+            String name = scanner.nextLine();
+
+            if (name.isEmpty()) {
+                break;
+            }
+
+            items.add(new Item(name));
+            
+        }
+
+        System.out.println("Items in total: " + items.size());
+        System.out.println();
+        System.out.println("Items");
+
+        for (Item item : items) {
+            System.out.println(item);
+        }
+
     }
 }
